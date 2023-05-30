@@ -1,10 +1,9 @@
 import React from "react";
-import { faker } from '@faker-js/faker';
 
 const CommentDetails = function (props) {
     return (<div className='comments'>
         <a href='/' className='avatar'>
-            <img alt='avatar' src={faker.image.avatar()} style={{ height: '50px', width: '50px' }}></img>
+            <img alt='avatar' src={props.avatar} style={{ height: '50px', width: '50px' }}></img>
         </a>
         <div className='content'>
             <a href='/' className='author'>{props.author}</a>
